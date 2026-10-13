@@ -1,32 +1,34 @@
+"java script is connected"
 function multiplicationTable(number) {
-  console.log("===== MULTIPLICATION TABLE =====");
+ let table="===== MULTIPLICATION TABLE =====\n";
 
     for (let i = 1; i <= 10; i++) {
-        console.log(number + " x " + i + " = " + (number * i));
+       table+= number + " x " + i + " = " + (number * i);
     }
 
-    console.log("================================");
+    table+="================================";
 }
 function printPattern(number) {
-   console.log("===== PATTERN =====");
+   let pattern="===== PATTERN =====\n";
      if (number % 2 === 0) {
       for (let i = 1; i <= number; i++) {        
         let row = "";
         for (let j = 1; j <= number; j++) {
                 row += "* ";
             }
-             console.log(row); }
+             pattern +=row + "\n" }
              } else {
         for (let i = 1; i <= number; i++) {
            let row = "";
             for (let j = 1; j <= i; j++) {
                 row += "* ";
             }
-         console.log(row);
+       pattern += row + "\n";
         }
     }
 
-    console.log("===================");
+     pattern += "===================";
+     alert(pattern);
 }
 
 

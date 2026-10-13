@@ -1,5 +1,5 @@
-let anotherstudent = true;
-while (anotherstudent){
+let student = true;
+while (student){
   let name=prompt("enter student's name:");
   let mark1=Number(prompt("enter mark 1:"));
   let mark2=Number(prompt("enter mark 2:"));
@@ -18,8 +18,7 @@ while (anotherstudent){
       let  total = calculateTotal(mark1,mark2,mark3);
       let average = calculateAverage(total);
     
-
-    let grade;
+      let grade;
     if(average>=90){
       grade="A";
     }else if(average>=75){
